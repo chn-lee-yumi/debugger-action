@@ -3,11 +3,10 @@ on:
     branches:
     - main
 jobs:
-  build:
-    name: build
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Setup Debug Session
-      uses: csexton/debugger-action@master
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Debug Session
+      uses: chn-lee-yumi/debugger-action@master

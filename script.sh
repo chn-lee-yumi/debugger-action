@@ -40,6 +40,7 @@ fi
 timeout=$((15*60))
 while [ -S /tmp/tmate.sock ]; do
   sleep 1
+  tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
   timeout=$(($timeout-1))
 
   if [ ! -f /tmp/keepalive ]; then

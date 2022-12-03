@@ -1,4 +1,8 @@
 on: workflow_dispatch
+
+env:
+  RUNNER_ARCH: arm64
+  
 jobs:
   test:
     name: Test

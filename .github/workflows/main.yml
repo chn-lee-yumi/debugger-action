@@ -1,7 +1,7 @@
 on: workflow_dispatch
 
 env:
-  RUNNER_ARCH: arm64
+  RUNNER_ARCH: ARM64
   
 jobs:
   test:

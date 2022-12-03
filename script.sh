@@ -39,9 +39,9 @@ fi
 # Wait for connection to close or timeout in 15 min
 timeout=$((15*60))
 while [ -S /tmp/tmate.sock ]; do
-  sleep 1
+  sleep 10
   tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
-  timeout=$(($timeout-1))
+  timeout=$(($timeout-10))
 
   if [ ! -f /tmp/keepalive ]; then
     if (( timeout < 0 )); then

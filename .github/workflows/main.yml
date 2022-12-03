@@ -10,3 +10,9 @@ jobs:
     steps:
     - name: Setup Debug Session
       uses: chn-lee-yumi/debugger-action@master
+  test2:
+    name: Test2
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Debug Session
+      uses: chn-lee-yumi/debugger-action@master
